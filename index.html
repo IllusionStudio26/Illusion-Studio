@@ -156,11 +156,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
                 <span class="text-brand-500 font-bold text-sm tracking-widest uppercase">OUR SERVICES</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">全方位設計與印刷解決方案</h2>
-                <p class="text-slate-600">從概念發想、視覺排版到精準印刷出廠，每一個環節都為您嚴格把關。</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">設計、印刷與影片剪輯，一站完成</h2>
+                <p class="text-slate-600">從品牌視覺、平面印刷到影片剪輯，整合線上與實體的品牌溝通。</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- 服務 1 -->
                 <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100 hover:shadow-xl hover:border-brand-500/30 transition-all group flex flex-col justify-between">
                     <div>
@@ -228,6 +228,23 @@
                         <a href="#calculator" class="text-slate-400 group-hover:text-brand-600 transition-colors"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
+
+                <!-- 服務 5：影片剪輯 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100 hover:shadow-xl hover:border-brand-500/30 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-violet-600 text-white flex items-center justify-center text-2xl mb-6 shadow-md group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">影片剪輯 / 短影音</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            將現有素材剪成 Reels、Shorts 或品牌宣傳影片，包含節奏剪輯、字幕、音效與動態字卡，並依平台輸出直式或橫式版本。
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-200/60 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-brand-600">短影音 / 品牌影片</span>
+                        <a href="#contact" class="text-slate-400 group-hover:text-brand-600 transition-colors" aria-label="詢問影片剪輯服務"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -246,6 +263,7 @@
                     <button class="px-4 py-2 rounded-full text-sm font-semibold bg-white text-slate-600 hover:bg-slate-200 transition-colors filter-btn" data-filter="card">名片設計</button>
                     <button class="px-4 py-2 rounded-full text-sm font-semibold bg-white text-slate-600 hover:bg-slate-200 transition-colors filter-btn" data-filter="box">包裝盒</button>
                     <button class="px-4 py-2 rounded-full text-sm font-semibold bg-white text-slate-600 hover:bg-slate-200 transition-colors filter-btn" data-filter="flyer">傳單 DM</button>
+                    <button class="px-4 py-2 rounded-full text-sm font-semibold bg-white text-slate-600 hover:bg-slate-200 transition-colors filter-btn" data-filter="video">影片剪輯</button>
                 </div>
             </div>
 
@@ -322,6 +340,19 @@
                         <p class="text-slate-500 text-sm">環保再生美術紙印刷，摺線精準耐折，兼具手感與環保理念。</p>
                     </div>
                 </div>
+
+                <!-- 作品 7：影片剪輯 -->
+                <div class="portfolio-item group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200/60" data-category="video">
+                    <div class="h-64 bg-slate-100 relative overflow-hidden border-b border-slate-200">
+                        <img src="portfolio-video.png" alt="咖啡品牌短影音剪輯示意作品" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-xs font-medium">影片剪輯</span>
+                        <span class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-white/90 text-brand-900 flex items-center justify-center shadow-lg"><i class="fa-solid fa-play text-sm"></i></span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-900 mb-1">漫步咖啡｜品牌短影音</h3>
+                        <p class="text-slate-500 text-sm">咖啡拉花短片剪輯，搭配節奏音效與直式社群版型，適合 Reels / Shorts 展示。</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -348,6 +379,7 @@
                                 <option value="box">客製包裝盒 / 彩盒</option>
                                 <option value="flyer">傳單 / DM 印刷</option>
                                 <option value="brand">品牌視覺整體設計</option>
+                                <option value="video">影片剪輯 / 短影音</option>
                             </select>
                         </div>
 
@@ -361,7 +393,7 @@
                         </div>
 
                         <div>
-                            <label class="block text-sm font-medium text-slate-300 mb-2">3. 數量 / 份數</label>
+                            <label id="calc-qty-label" class="block text-sm font-medium text-slate-300 mb-2">3. 數量 / 份數</label>
                             <input type="number" id="calc-qty" value="2" min="1" max="1000" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-500">
                         </div>
                     </div>
@@ -526,6 +558,7 @@
                                     <option>客製包裝盒 / 禮盒</option>
                                     <option>宣傳傳單 / DM / 海報</option>
                                     <option>品牌視覺設計 (VI)</option>
+                                    <option>影片剪輯 / 短影音</option>
                                     <option>其他綜合專案諮詢</option>
                                 </select>
                             </div>
@@ -635,6 +668,7 @@
         const calcService = document.getElementById('calc-service');
         const calcSpec = document.getElementById('calc-spec');
         const calcQty = document.getElementById('calc-qty');
+        const calcQtyLabel = document.getElementById('calc-qty-label');
         const summaryItemName = document.getElementById('summary-item-name');
         const summaryUnitPrice = document.getElementById('summary-unit-price');
         const summaryQty = document.getElementById('summary-qty');
@@ -644,6 +678,17 @@
             const service = calcService.value;
             const spec = calcSpec.value;
             const qty = parseInt(calcQty.value) || 1;
+            const isVideo = service === 'video';
+            calcSpec.closest('div').classList.toggle('hidden', isVideo);
+            calcQtyLabel.textContent = isVideo ? '3. 影片支數' : '3. 數量 / 份數';
+
+            if (isVideo) {
+                summaryItemName.textContent = '影片剪輯（依片長、素材與需求報價）';
+                summaryUnitPrice.textContent = '依需求報價';
+                summaryQty.textContent = `${qty} 支`;
+                totalPrice.textContent = '請洽詢';
+                return;
+            }
 
             let basePrice = 500;
             let serviceName = "名片印刷";
@@ -673,6 +718,7 @@
         calcService.addEventListener('change', updateCalculator);
         calcSpec.addEventListener('change', updateCalculator);
         calcQty.addEventListener('input', updateCalculator);
+        updateCalculator();
 
         // 表單送出彈窗處理
         const contactForm = document.getElementById('contact-form');
